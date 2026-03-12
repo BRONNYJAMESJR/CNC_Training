@@ -42,8 +42,8 @@ X4.5 Y0.75      (North)
 X4.75 Y0.75     (East)
 X4.75 Y4.75     (North)
 X5.5 Y4.75      (East)
-
 (END SEQUENCE)
+
 G00 G53 Z0.0	(Raise the pen) 
 M30 			(End Program)
 %
