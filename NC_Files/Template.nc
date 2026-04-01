@@ -10,7 +10,7 @@ G00 						(Rapid Movement)
 G90 G17 					(Safe Startup Line: Absolute Programming and Set the active plane as XY)
 	X0. Y0. 				(Position at 0 for X and Y axes - set in work offsets)
 G43 H01 					(Use Tool Offset #1)
-G91 						(Change to incremental positioning)
+G90 						(Change to incremental positioning)
 			Z0.15 			(Move to Z position just above work)
 (END Startup Process)
 
