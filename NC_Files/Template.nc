@@ -1,6 +1,5 @@
 %
-O[Unique Number] 
-([NAME OF DESIGN]) 
+O051410
 (This template is for any Haas CNC machine.  EOL characters are not required.  If using another machine check controller documentation.
 
 (Startup Process)
@@ -18,7 +17,10 @@ G91 						(Change to incremental positioning)
 (Set Feedrate and drop to just above origin)
 G01 F5. 					(Change to Cutting speed and set Feed Rate.)
 			Z-0.3			(Drop cutter into work)
-
+G00 X0. Y0.
+G01 Z-0.3 F5.0
+Y1.0
+G02 X0. Y0. I0. J-0.5
 [POSITIONS GO HERE]
 
 (End Sequence)
