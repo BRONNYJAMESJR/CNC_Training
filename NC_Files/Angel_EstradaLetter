@@ -12,19 +12,17 @@ G43 H01 Z0.15
 (END Startup Process)
 
 
-G91                 
-G01 F5.       (Drop into work 0.3 units from the current Z0.15)
+(Set Feedrate)
+G90 G01 F5. Z-0.15      (Go exactly 0.15 below the surface)
 
-(Set Feedrate and drop to just above origin)
-G01 F5. 					(Change to Cutting speed and set Feed Rate.)
-			Z-0.3			(Drop cutter into work)
-G01 Y1.0                (Move up 1.0 unit by 4)
-G02 X0. Y-1.0 I0. J-0.5 (Arc back 1.0 unit to the start)
-[POSITIONS GO HERE]
+(Start the Letter D in Incremental)
+G91                     (Switch to Incremental)
+G01 Y1.0                (Draw the vertical back of the D)
+G02 X0. Y-1.0 I0. J-0.5 (Clockwise arc back to the start)
 
 (End Sequence)
-
-G90                
-G00 Z2.            
-G28                
-M30                
+G90                     (Absolute)
+G00 Z2.                 (Retract safely to 2 inches above part)
+G28                     (Home the machine)
+M30                     (End program)
+%
