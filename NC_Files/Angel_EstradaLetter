@@ -13,7 +13,7 @@ G43 H01 Z0.15
 
 
 G91                 
-G01 F5. Z-0.3       (Drop into work 0.3 units from the current Z0.15)
+G01 F5.       (Drop into work 0.3 units from the current Z0.15)
 
 (Set Feedrate and drop to just above origin)
 G01 F5. 					(Change to Cutting speed and set Feed Rate.)
