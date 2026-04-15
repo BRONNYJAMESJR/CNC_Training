@@ -23,7 +23,8 @@ G02 X0. Y-1.0 I0. J-0.5 (Arc back 1.0 unit to the start)
 [POSITIONS GO HERE]
 
 (End Sequence)
-			Z2.				(Raise Cutter)
-G28							(Machine Home) 
-M30 						(End of Program)
-%
+
+G90                
+G00 Z2.            
+G28                
+M30                
